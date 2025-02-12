@@ -6,7 +6,7 @@ export default function Home() {
   const [user, setUser] = useState<{ fullName: string; email: string; avatar: string } | null>(null);
 
   const handleFormSubmit = (data: { fullName: string; email: string; avatar: string }) => {
-    setUser(data); // Captures form data and set it for ticket generation
+    setUser(data); // Capture form data and set it for ticket generation
   };
 
   return (
