@@ -15,7 +15,31 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 1440px;
+  height: 1000px;
+  flex-shrink: 0;
+  opacity: 0.9;
+  background: #061C21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-text {
+  width: 1018.667px;
+  color: #00FF6A;
+  text-align: center;
+  font-family: 'JejuMyeongjo', serif;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.custom-svg {
+  width: 237.339px;
+  height: 744.165px;
+  transform: rotate(19.936deg);
+  stroke-width: 12px;
+  stroke: #98E4F1;
 }

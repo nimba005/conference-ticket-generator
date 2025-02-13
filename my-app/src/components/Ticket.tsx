@@ -5,7 +5,16 @@ interface TicketProps {
 export default function Ticket({ user }: TicketProps) {
   return (
     user && (
-      <div className="border p-4 mt-4 rounded-lg shadow-md">
+      <div
+        className="border p-4 mt-4 rounded-lg shadow-md"
+        style={{
+          width: "241px",
+          height: "122px",
+          flexShrink: "0",
+          aspectRatio: "241 / 122",
+          background: "url('<path-to-image>') lightgray 50% / cover no-repeat",
+        }}
+      >
         <h2 className="text-xl font-bold mb-2">Conference Ticket</h2>
         <p><strong>Full Name:</strong> {user.fullName}</p>
         <p><strong>Email:</strong> {user.email}</p>
